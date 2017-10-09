@@ -1,4 +1,4 @@
-# React Router 3 API Reference
+# React Router 3.x 主要API
 
 - [Components](#components)
   - [`<Router>`](#router)
@@ -34,11 +34,11 @@
 ## Components
 
 ### `<Router>`
-Primary component of React Router. It keeps your UI and the URL in sync.
+React Router的主要组件<Router>，让你的UI和URL保持同步。
 
 #### Props
 ##### `children` (required)
-One or many [`<Route>`](#route)s or [`PlainRoute`](#plainroute)s. When the history changes, `<Router>` will match a branch of its routes, and render their configured [components](#routecomponent), with child route components nested inside the parents.
+<Router> 组件有一些子组件<Route> 、 PlainRoute 、 <IndexRoute>。浏览器Url改变的时候，<Router>组件将会匹配他的子路由，渲染对应的配置的组件，子路由组件嵌套在父路由内。
 
 ##### `routes`
 Alias for `children`.
